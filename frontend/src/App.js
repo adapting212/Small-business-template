@@ -24,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+      
       <HomePage  state={state} dispatch={dispatch} />
     </div>
   );
