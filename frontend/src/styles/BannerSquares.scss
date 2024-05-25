@@ -46,6 +46,13 @@
   text-align: center;
 }
 
+.leftbannersquare:hover,
+.rightbannersquare:hover,
+.centerbannersquare:hover,
+.centerbannersquare2:hover {
+  filter: brightness(70%); /* Apply a darkening effect on hover */
+}
+
 .circle-image {
   border-radius: 50%; /* Make the image circular */
   width:11vh; /* Adjust width as needed */

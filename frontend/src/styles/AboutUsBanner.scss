@@ -32,6 +32,8 @@
   color: black;
   border: 1px solid black;
   transition: background-position 1s ease;
+  white-space: pre-line;
+  width:10vw;
   }
   
   .customButton2:hover {
@@ -78,6 +80,13 @@
   
   .customButton3.MuiButton-contained:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background color */
+  }
+  .customButton3:not(:hover) {
+    background: linear-gradient(to left, transparent 0%, transparent 50%, white 50%, white 100%);
+    background-size: 200% 100%; /* Set the background size to twice the width */
+    color: black;
+    border: 1px solid black;
+    transition: background-position 1s ease; /* Set transition for background position */
   }
 }
 
