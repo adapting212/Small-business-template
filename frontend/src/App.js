@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useApplicationData from './hooks/useApplicationData';
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 import Navbar from "./navBar/Navbar";
 import {
   BrowserRouter as Router,
@@ -23,10 +24,15 @@ function App() {
 
 
   return (
-    <div className="App">
+    <Router>
+      <Navbar dispatch={dispatch} state={state} />
+      <Routes>
+      <Route path="/" element={<HomePage state={state} dispatch={dispatch} />} />
+      <Route path="/about" element={<AboutPage state={state} dispatch={dispatch} />} />
+
+      </Routes>
       
-      <HomePage  state={state} dispatch={dispatch} />
-    </div>
+      </Router>
   );
 }
 

@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-
-import Cookies from "universal-cookie";
-import {jwtDecode} from "jwt-decode";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faShoppingBag, faSearch } from '@fortawesome/free-solid-svg-icons';
+import logo from '../assets/logo2.svg'
 import "../styles/navbar.scss";
 
 const Navbar = ({ dispatch, state }) => {
@@ -15,19 +11,25 @@ const Navbar = ({ dispatch, state }) => {
  
   return (
     <>
-      
       <nav className="nav">
-       
-        <div className={`nav-menu`}>
+        <div className="nav-logo">
+          <img src={logo} alt="Logo" className="nav-image" width="210" height="29" aria-hidden="true" decoding="async"/>
+        </div>
+        <div className="nav-menu">
           <NavLink to="/" className="nav-link" activeClassName="active">
-            
-          </NavLink>
-
-          <NavLink to="/admin" className="nav-link" activeClassName="active">
-              Admin
+            Home
             </NavLink>
-            <NavLink to="/admin" className="nav-link" activeClassName="active">
-              Admin
+          <NavLink to="/about" className="nav-link" activeClassName="active">
+            About
+            </NavLink>
+          <NavLink to="/" className="nav-link" activeClassName="active">
+            Aesthetics
+            </NavLink>
+          <NavLink to="/" className="nav-link" activeClassName="active">
+            Weight Loss
+            </NavLink>
+          <NavLink to="/" className="nav-link" activeClassName="active">
+            FAQ
             </NavLink>
          
 

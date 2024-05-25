@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Typography } from '@mui/material';
-import right from '../assets/homepage/landing.jpg';
+import right from '../assets/landing.jpg';
 import '../styles/BannerSquares.scss';
 
 const BannerSquares = () => {
