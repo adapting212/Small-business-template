@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Typography } from '@mui/material';
 import right from '../assets/landing.jpg';
-import '../styles/AboutUsBanner.scss';
+import '../styles/HomePageBanner.scss';
 
 const AboutUsBanner = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logo from '../assets/logo2.svg'
+import logo from '../assets/logo.svg'
 import "../styles/navbar.scss";
 
 const Navbar = ({ dispatch, state }) => {
