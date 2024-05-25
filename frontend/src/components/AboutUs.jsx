@@ -6,7 +6,15 @@ import '../styles/AboutUsBanner.scss';
 const AboutUsBanner = () => {
   return (
     <div className="container">
-      <div className="left">
+
+<div class="left">
+  <div class="background-image pink-blob"></div>
+  <div class="background-image abstract-flower"></div>
+  <div class="aboutUsimg-container">
+    <img src={right} alt="Description" class="aboutusimg" />
+  </div>
+</div>
+      <div className="right">
         <Typography variant="h4" gutterBottom className="header1">
           GET THE CARE YOU DESERVE
         </Typography>
@@ -16,13 +24,21 @@ const AboutUsBanner = () => {
         <Typography variant="body1" gutterBottom className="paragraph">
           Our team of highly-skilled and experienced nurse practitioners are able to provide a wide range of services, weight loss solutions to enhance your beauty.
         </Typography>
-        <Button variant="contained" className="customButton">
+
+<div className="buttondivabout"><Button variant="contained" className="customButton2">
+          Call Now
+        </Button>
+        
+        <Button variant="contained" className="customButton1">
+          Book Appointment
+        </Button></div>
+
+        <Button variant="contained" className="customButton3">
           Book Appointment
         </Button>
       </div>
-      <div className="right">
-        <img src={right} alt="Description" />
-      </div>
+      
+
     </div>
   );
 };

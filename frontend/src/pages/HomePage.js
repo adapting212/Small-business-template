@@ -16,6 +16,7 @@ const HomePage = ({ state, dispatch }) => {
     <>
      <SplashBanner/>
      <BannerSquares/>
+     <AboutUsBanner/>
       
 
   

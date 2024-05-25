@@ -3,7 +3,7 @@
   height: 100vh;
 }
 
-.left {
+.right {
   width: 40%;
   padding: 20px;
   display: flex;
@@ -26,47 +26,118 @@
     font-size: 2vh;
   }
 
-  .customButton {
-    position: relative;
-    overflow: hidden;
-    background-color: rgb(90, 118, 106);
-    color: white;
-    font-family: 'Roboto, sans-serif';
-    border: 2px solid rgb(90, 118, 106);
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+  .customButton2 {
+    background: linear-gradient(to right, transparent 0%, transparent 50%, white 50%, white 100%);
+  background-size: 200% 100%; /* Set the background size to twice the width */
+  color: black;
+  border: 1px solid black;
+  transition: background-position 1s ease;
+  }
+  
+  .customButton2:hover {
+    background-position: -100% 0; /* Move the background position to -100% (completely fill) on hover */
+    color: black;
+  }
+  
+  .customButton2.MuiButton-contained:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background color */
+  }
 
-    &:hover {
-      color: white; // Changed to white
-      background-color: black;
-      border-color: transparent;
+  .customButton1 {
+    background: linear-gradient(to right, transparent 0%, transparent 50%, white 50%, white 100%);
+  background-size: 200% 100%; /* Set the background size to twice the width */
+  color: black;
+  border: 1px solid black;
+  transition: background-position 1s ease;
+  }
+  
+  .customButton1:hover {
+    background-position: -100% 0; /* Move the background position to -100% (completely fill) on hover */
+    color: black;
+  }
+  
+  .customButton1.MuiButton-contained:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background color */
+  }
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(90, 118, 106); // Changed to original color
-        transition: left 0.3s;
-      }
-    }
 
-    &:hover::before {
-      left: 0;
-    }
+
+
+  .customButton3 {
+    background: linear-gradient(to right, transparent 0%, transparent 50%, white 50%, white 100%);
+  background-size: 200% 100%; /* Set the background size to twice the width */
+  color: black;
+  border: 1px solid black;
+  transition: background-position 1s ease;
+  }
+  
+  .customButton3:hover {
+    background-position: -100% 0; /* Move the background position to -100% (completely fill) on hover */
+    color: black;
+  }
+  
+  .customButton3.MuiButton-contained:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background color */
   }
 }
 
-.right {
+
+.left {
+  position: relative;
   width: 60%;
   overflow: hidden;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* Adjust width as needed */
+  height: 50%; /* Adjust height as needed */
+  background-repeat: no-repeat;
+  background-size: contain; /* Adjust background size */
+  opacity: 0.5; /* Adjust opacity as desired */
+}
+
+.pink-blob {
+  background-image: url('https://d33wubrfki0l68.cloudfront.net/19e74db17c6581bfe6c594fc32f9cd8c97d93237/e5d53/assets/images/pink-blob.svg');
+  position: absolute;
+   /* Adjust height as needed */
+ /* Adjust left position */
+  transform: rotate(30deg); /* Rotate the element by 45 degrees */
+}
+
+.abstract-flower {
+  background-image: url('https://d33wubrfki0l68.cloudfront.net/1fbc911acc9a4631638a1cc9ac960db84d31fafe/4e3d3/assets/images/abstract-flower.svg');
+  left:45%;
+  width: 30%; /* Adjust width as needed */
+ 
+
+  transform: rotate(150deg);
+  top: 50%;
+}
+
+.aboutUsimg-container {
+  position: relative;
+  width: 65vh;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.aboutusimg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%; /* Adjust the vertical radius to make it an oval */
+  object-fit: cover;
+  z-index: 2; /* Increasing z-index to bring it to the front */
+}
+
+
+
