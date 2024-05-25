@@ -16,25 +16,28 @@ const AboutUsBanner = () => {
 </div>
       <div className="right">
         <Typography variant="h4" gutterBottom className="header1">
-          GET THE CARE YOU DESERVE
+          ABOUT US
         </Typography>
         <Typography variant="h5" gutterBottom className="header2">
-          Unlock a Healthier and Happier You
+        A Personalized Approach To Your Well-Being
         </Typography>
         <Typography variant="body1" gutterBottom className="paragraph">
-          Our team of highly-skilled and experienced nurse practitioners are able to provide a wide range of services, weight loss solutions to enhance your beauty.
+        At Transformative Health & Wellness, we understand that healthcare can be a financial burden for many individuals and families. That's why we strive to provide high quality service at an affordable price. We are committed to ensuring that every patient feels heard, respected and provided with the best possible care.
+        </Typography>
+        <Typography variant="body1" gutterBottom className="paragraph">
+        Weight loss solutions including semaglutide, tirezapetide and other compound services. In addition we also offer aesthetic services such as neurotoxins and fillers, among other things.
         </Typography>
 
 <div className="buttondivabout"><Button variant="contained" className="customButton2">
-          Call Now
-        </Button>
+  Call{'\n'}Now
+</Button>
         
         <Button variant="contained" className="customButton1">
           Book Appointment
         </Button></div>
 
         <Button variant="contained" className="customButton3">
-          Book Appointment
+          Read More About Us
         </Button>
       </div>
       
