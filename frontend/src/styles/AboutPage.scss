@@ -1,24 +1,23 @@
 .container {
     position: absolute; /* Position the container absolutely */
-    top: 20%; /* Adjust to center vertically */
-    left: 10%; /* Adjust to center horizontally */
+    top: 23%; /* Adjust to center vertically */
+    left: 14%; /* Adjust to center horizontally */
     transform: translate(-50%, -50%); /* Center the container */
     color: white; /* Set the text color for visibility */
-   
-    padding: 10px; /* Optional: Add padding to the container */
-    height: 7%;
+    padding: 0px; /* Optional: Add padding to the container */
+    height: 0%
   }
   
 .title {
-    font-size: 2rem; /* Adjust the font size as needed */
+    font-size: 61px; /* Adjust the font size as needed */
     font-weight: bold; /* Make the text bold */
 }
 .background {
-    position: relative;
+    position: absolute;
     display: flex;
-    background-color: #ffffff;
+    object-fit: cover;
+    margin-top: -0.19%;
     padding: 0;
-    background: linear-gradient(to right, transparent 0%, black, transparent 50%, black, transparent 100%, );
-    height: 100%;
+    height: 280px;
     width: 100%;
 }   
