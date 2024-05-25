@@ -1,12 +1,13 @@
 import * as React from 'react';
 import SplashBanner from '../components/SplashBanner';
 import BannerSquares from '../components/BannerSquares';
-import Navbar from '../navBar/Navbar';
+import AboutUsBanner from '../components/AboutUs';
 
 
 
 
-const HomePage = ({ state, dispatch }) => {
+
+const AboutPage = ({ state, dispatch }) => {
 
   
 
@@ -15,7 +16,6 @@ const HomePage = ({ state, dispatch }) => {
     <>
      <SplashBanner/>
      <BannerSquares/>
-     <AboutUsBanner/>
       
 
   
@@ -23,4 +23,4 @@ const HomePage = ({ state, dispatch }) => {
   );
 };
 
-export default HomePage;
+export default AboutPage;
