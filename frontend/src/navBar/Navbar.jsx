@@ -5,10 +5,6 @@ import "../styles/navbar.scss";
 
 const Navbar = ({ dispatch, state }) => {
  
-
-  
-
- 
   return (
     <>
       <nav className="nav">
@@ -31,6 +27,9 @@ const Navbar = ({ dispatch, state }) => {
           <NavLink to="/" className="nav-link" activeClassName="active">
             FAQ
             </NavLink>
+          <NavLink to="/" className="contact-us" activeClassName="active">
+            Contact Us
+          </NavLink>
          
 
         </div>

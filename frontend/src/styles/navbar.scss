@@ -1,42 +1,50 @@
+/* Navigation Bar Styles */
 .nav {
-  position: relative;
+  position: fixed;
   display: flex;
   background-color: #ffffff;
-  padding: 0;
-  height: 72px;
+  height: 9.3vh;
+  width: 100%;
+  z-index: 998;
+  top: 0%;
 }
 
+/* Logo Styles */
 .nav-logo {
-  position: absolute;
-  height: 5vh; /* Maintain aspect ratio */
-  width: 250px; /* Adjust the width as needed */
+  position: fixed;
+  height: 4.6vh;
+  width: 245px;
   background-color: #5a766a;
-  padding: 16px; /* Add padding if necessary */
-  z-index: 999; /* Ensure it's above other content */
+  padding: 18px;
+  z-index: 999;
 }
 
+/* Logo Image Styles */
 .nav-image {
   height: 40px;
   width: 247.525px;
   object-fit: scale-down;
-  align-items: center;
   opacity: 0.9;
 }
 
+/* Menu Container Styles */
 .nav-menu {
+  position: fixed;
   display: flex;
-  margin-left: 20%;
   flex-direction: row;
   align-items: center;
-  position: relative;
+  margin-left: 25%;
+  height: 9.3vh;
+  width: 100%;
+  background-color: #ffffff;
 }
 
+/* Link Styles */
 .nav-link {
-  color: #4e4b66;
   display: flex;
   align-items: center;
+  color: #4e4b66;
   text-decoration: none;
-  background: linear-gradient(to right, transparent 0%, transparent 50%, white 50%, white 100%);
   padding: 0 1rem;
   height: 100%;
   opacity: 0.8;
@@ -48,6 +56,27 @@
 }
 
 .nav-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  background-position: -100% 0; /* Move the background position to -100% (completely fill) on hover */
+  color: #5a766a;
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  color: #4e4b66;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  opacity: 0.8;
+  cursor: pointer;  
+}
+
+.contact-us.active {
+  color: #4e4b66;
+}
+
+.contact-us:hover {
   text-decoration: underline; /* Add underline on hover */
   background-position: -100% 0; /* Move the background position to -100% (completely fill) on hover */
   color: #5a766a;
