@@ -4,12 +4,12 @@ import '../styles/AboutPage.scss';
 
 const AboutUsComponent = () => {
   return (
-    <main>
+    <div>
         <img src={background} class="background" aria-hidden="true"/>
         <div className="container">
             <span class="title">About Us</span>
         </div>
-    </main>
+    </div>
     
     
   );

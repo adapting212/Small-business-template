@@ -26,3 +26,4 @@ const AboutUsComponent = () => {
 };
 
 export default AboutUsComponent;
+ 
