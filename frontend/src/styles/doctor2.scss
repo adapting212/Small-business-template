@@ -1,9 +1,19 @@
+.d2-container{
+    position: absolute; /* or relative/fixed depending on your layout needs */
+    margin-top: 25em;
+    left: 50em; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    max-width: 45em; /* Optional: max width to constrain the component */
+    max-height: 10em;
+    background-color: transparent;
+  }
 /* General container styling */
-.d2-container {
+.d2-text-container {
     display: flex; /* Use flexbox layout */
     flex-direction: column;
     gap: 20px; /* Add space between the image and text */
-    right: 20%  ;
+    margin-left: 17.5em;
+    margin-top: -20em;
 }
 
 /* Image styling */
@@ -11,22 +21,25 @@
     width: 15em; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     flex-shrink: 0; /* Prevent image from shrinking */
+    border-radius: 100px; /* Optional: rounded corners */
 }
 
 /* Title styling */
 .d2-title {
     font-size: 24px; /* Adjust font size */
+    font-weight: bold;
 }
 
 /* Subtitle styling */
 .d2-subtitle {
-    font-size: 18px; /* Adjust font size */
+    font-size: 12.8px; /* Adjust font size */
     font-weight: normal; /* Normal weight */
+    margin-top: -1.5em;
 }
 
 /* Body text styling */
 .d2-body {
-    font-size: 14px; /* Adjust font size */
+    font-size: 16px; /* Adjust font size */
     line-height: 1.5; /* Adjust line height for readability */
-    width: 40em;
+    width: 20em;
 }

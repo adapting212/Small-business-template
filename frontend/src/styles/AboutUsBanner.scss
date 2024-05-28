@@ -1,42 +1,53 @@
-main {
+.about-us-container {
     display: flex;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    max-width: 80%;
-    margin-top: 40%;
-    margin-left: 15%;
+    background: transparent;
+    margin-top: 36.2%;
+    margin-left: 13.7%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items vertically */
 }
 
 .person {
-    max-width: 50%;
+    max-width: 43%;
     height: auto;
     object-fit: cover;
+    border-radius: 300px; /* Optional: rounded corners */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-right: 2em; /* Adjust spacing between image and text */
 }
 
 .text-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5em;
+    flex: 1; /* Allow text container to grow */
+    margin-top: -45em;
+    margin-left: 40em;
+    margin-right: 10em;
 }
-
+/*text mods*/
 .about-title {
     font-size: 16px;
-    margin-bottom: -1em;
+    font-weight: bold;
+    color: #5A766A;
+    margin-bottom: 0em;
 }
 
 .sub-title {
     font-size: 49px;
-    color: #666;
-    margin-bottom: 0em;
+    font-weight: bold;
+    line-height: 58.8px;
+    color: black;
+    margin-bottom: 0.5em;
 }
 
 .body {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 24px;
 }
 
 .body span {
     display: block;
-    margin-bottom: 1em  ;
+    margin-bottom: 1em;
 }

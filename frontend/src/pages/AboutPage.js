@@ -12,14 +12,12 @@ const AboutPage = ({ state, dispatch }) => {
 
 
   return (
-    <>
-     <AboutUsComponent/>
-     <AboutUsBanner/>
-     <Doctor1/>
-     <Doctor2/>
-
-  
-    </>
+     <div className="page-container" style={{ backgroundColor: '#F8F8F8' }}>
+      <AboutUsComponent/>
+      <AboutUsBanner/>
+      <Doctor1/>
+      <Doctor2/>
+    </div>
   );
 };
 
