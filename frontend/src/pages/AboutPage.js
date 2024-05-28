@@ -5,7 +5,6 @@ import Doctor1 from '../components/Doctor1component'
 import Doctor2 from '../components/Doctor2component'
 
 
-
 const AboutPage = ({ state, dispatch }) => {
 
   
@@ -17,6 +16,7 @@ const AboutPage = ({ state, dispatch }) => {
       <AboutUsBanner/>
       <Doctor1/>
       <Doctor2/>
+
     </div>
   );
 };
