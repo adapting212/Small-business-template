@@ -1,0 +1,32 @@
+/* General container styling */
+.d2-container {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column;
+    gap: 20px; /* Add space between the image and text */
+    right: 20%  ;
+}
+
+/* Image styling */
+.doctor-2 {
+    width: 15em; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+/* Title styling */
+.d2-title {
+    font-size: 24px; /* Adjust font size */
+}
+
+/* Subtitle styling */
+.d2-subtitle {
+    font-size: 18px; /* Adjust font size */
+    font-weight: normal; /* Normal weight */
+}
+
+/* Body text styling */
+.d2-body {
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    width: 40em;
+}
