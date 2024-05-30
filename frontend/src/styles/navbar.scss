@@ -3,81 +3,104 @@
   position: fixed;
   display: flex;
   background-color: #ffffff;
-  height: 9.3vh;
+  height: 9.25%; /* Converted to percentage */
   width: 100%;
-  z-index: 998;
-  top: 0%;
+  z-index: 1;
+  top: 0;
+  transition: height 0.3s ease;
+  flex-wrap: wrap; /* Allow wrapping for mobile adaptation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+/* Expanded Nav Bar Style */
+.nav.expanded {
+  height: 20%; /* Converted to percentage */
 }
 
 /* Logo Styles */
 .nav-logo {
-  position: fixed;
-  height: 4.6vh;
-  width: 245px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 18.4%;
   background-color: #5a766a;
-  padding: 18px;
-  z-index: 999;
+  transition: height 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+/* Expanded Logo Style */
+.nav-logo.expanded {
+  height: 100%; /* Adjusted height when expanded to maintain ratio */
 }
 
 /* Logo Image Styles */
 .nav-image {
-  height: 40px;
-  width: 247.525px;
+  height: 70%; /* Adjusted to maintain aspect ratio */
+  width: 260%; /* Maintain aspect ratio */
   object-fit: scale-down;
   opacity: 0.9;
 }
 
 /* Menu Container Styles */
 .nav-menu {
-  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 25%;
-  height: 9.3vh;
-  width: 100%;
+  margin-left: 6%; /* Push to the right */
+  margin-top: 2%;
+  height: 9.3%; /* Converted to percentage */
   background-color: #ffffff;
+  transition: height 0.3s ease;
+  gap: 1%;
 }
 
+.nav-menu.expanded {
+  height: 80%;
+}
+
+
 /* Link Styles */
-.nav-link {
+.nav-link, .contact-us {
   display: flex;
   align-items: center;
   color: #4e4b66;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 5%;
   height: 100%;
   opacity: 0.8;
   cursor: pointer;
+  flex: 1 1 auto; /* Allow links to adjust size for mobile */
 }
 
-.nav-link.active {
+.nav-link.active, .contact-us.active {
   color: #4e4b66;
 }
 
-.nav-link:hover {
-  text-decoration: underline; /* Add underline on hover */
-  background-position: -100% 0; /* Move the background position to -100% (completely fill) on hover */
+.nav-link:hover, .contact-us:hover {
+  text-decoration: underline;
   color: #5a766a;
 }
 
-.contact-us {
-  display: flex;
-  align-items: center;
-  color: #4e4b66;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  opacity: 0.8;
-  cursor: pointer;  
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .nav {
+    height: auto; /* Allow height to adjust */
+    flex-direction: column; /* Stack items vertically */
+  }
 
-.contact-us.active {
-  color: #4e4b66;
-}
+  .nav-logo {
+    justify-content: center; /* Center logo in mobile view */
+    width: 100%; /* Make logo container full width */
+  }
 
-.contact-us:hover {
-  text-decoration: underline; /* Add underline on hover */
-  background-position: -100% 0; /* Move the background position to -100% (completely fill) on hover */
-  color: #5a766a;
+  .nav-menu {
+    justify-content: center; /* Center menu in mobile view */
+    width: 100%; /* Make menu container full width */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .nav-link, .contact-us {
+    justify-content: center; /* Center links in mobile view */
+    padding: 2% 0; /* Adjust padding for better spacing */
+  }
 }
