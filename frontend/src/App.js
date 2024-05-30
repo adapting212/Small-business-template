@@ -9,32 +9,26 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
-
-
-
-
-
-
-
-
+import './styles/App.scss';
 
 function App() {
-
   const { state, dispatch } = useApplicationData();
 
-
   return (
-    <Router>
-      <Navbar dispatch={dispatch} state={state} />
-      <Footer/>
-      <Routes>
-      <Route path="/" element={<HomePage state={state} dispatch={dispatch} />} />
-      <Route path="/about" element={<AboutPage state={state} dispatch={dispatch} />} />
-
-      </Routes>
-      
+    <div className="app-container">
+      <Router>
+        <Navbar dispatch={dispatch} state={state} />
+        
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<HomePage state={state} dispatch={dispatch} />} />
+            <Route path="/about" element={<AboutPage state={state} dispatch={dispatch} />} />
+          </Routes>
+        </div>
+        
+        <Footer />
       </Router>
+    </div>
   );
 }
 
