@@ -16,7 +16,6 @@ const AboutPage = ({ state, dispatch }) => {
       <AboutUsBanner/>
       <Doctor1/>
       <Doctor2/>
-
     </div>
   );
 };

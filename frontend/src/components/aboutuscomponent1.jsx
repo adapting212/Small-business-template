@@ -1,17 +1,14 @@
 import React from 'react';
-import background1 from '../assets/interior.jpg';
-import '../styles/AboutPage.scss';
-
+import '../styles/AboutPage.scss'
+import '../assets/interior.jpg'
 const AboutUsComponent = () => {
   return (
-    <div>
-        <img src='background1' class="background" aria-hidden="true"/>
-        <div className="container">
-            <span class="title">About Us</span>
-        </div>
+    <div className='component-container'>
+      <img src='' className="background" aria-hidden="true" alt="" />
+      <div className="header-text-container">
+        <span className="title">About Us</span>
+      </div>
     </div>
-    
-    
   );
 };
 

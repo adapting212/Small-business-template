@@ -1,41 +1,47 @@
-.container {
-    position: absolute;
-    top: 21%;
-    left: 17%;
-    transform: translate(-50%, -50%);
-    color: #F8F8F8;
-    padding: 0%; /* Padding is kept as a percentage, optional */
-  }
-  
-  .title {
-    font-size: 4.24%; /* Adjusted font size to a percentage */
-    font-weight: bold;
-  }
-  
-  .background {
-    position: absolute;
-    display: flex;
-    object-fit: cover;
-    top: 9%;
-    padding: 0%;
-    height: 14.5%; /* Changed from em to percentage */
-    width: 100%;
-    z-index: -1;
-    background-image: url('../assets/interior.jpg'); /* Ensure the path is correct */
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Ensure it covers the background element */
-    background-image: linear-gradient(to right, black, transparent);
-    opacity: 0.8;
-    z-index: 1;
-    pointer-events: none; /* Ensure the gradient does not interfere with any user interactions */
-  }
-  
+/* Component Container Styles */
+.component-container {
+  height: aut;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* Container Styles */
+.header-text-container {
+  position: absolute;
+  top: 35%;
+  left: 7.5%;
+  color: #F8F8F8;
+  height: 100%;
+}
+
+
+/* Title Styles */
+.title {
+  font-size: 61px;
+  font-weight: bold;
+}
+
+/* Background Styles */
+.background {
+  position: absolute;
+  display: flex;
+  object-fit: cover;
+  top: 0%;
+  height: 56.88%;
+  width: 100%;
+  z-index: -1;
+  background-image: url('../assets/interior.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background Overlay Styles */
+.background::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, black, transparent);
+  opacity: 0.9;
+  z-index: 1;
+  pointer-events: none;
+}
