@@ -5,7 +5,7 @@ import '../styles/AboutUsBanner.scss';
 const AboutUsComponent = () => {
   return (
     <div className="about-us-container">
-      <main>
+
         <img src={person1} className="person" aria-hidden="true" />
         <div className='text-container'>
           <div className='about-title'>
@@ -19,7 +19,6 @@ const AboutUsComponent = () => {
             <span>We are committed to ensuring that every patient feels heard, respected and provided with the best possible care. We believe that everyone deserves access to quality healthcare, without breaking the bank. That's our promise to you.</span>
           </div>
         </div>
-      </main>
     </div>
   );
 };

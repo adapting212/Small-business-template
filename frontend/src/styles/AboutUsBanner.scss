@@ -1,8 +1,11 @@
+/* Container Styles */
 .about-us-container {
     display: flex;
     background: transparent;
-    margin-top: 36.2%;
-    margin-left: 13.7%;
+    margin-top: 40%;
+    margin-left: 10%;
+    height: auto;
+    width: 75%;
 }
 
 .container {
@@ -11,27 +14,28 @@
     align-items: center; /* Align items vertically */
 }
 
+/* Person Image Styles */
 .person {
     max-width: 43%;
     height: auto;
     object-fit: cover;
     border-radius: 300px; /* Optional: rounded corners */
     flex-shrink: 0; /* Prevent the image from shrinking */
-    margin-right: 2em; /* Adjust spacing between image and text */
 }
 
+/* Text Container Styles */
 .text-container {
     flex: 1; /* Allow text container to grow */
-    margin-top: -45em;
-    margin-left: 40em;
-    margin-right: 10em;
+    margin-left: 10%;
+    margin-top: -5%;
 }
-/*text mods*/
+
+/* Text Modifications */
 .about-title {
     font-size: 16px;
     font-weight: bold;
     color: #5A766A;
-    margin-bottom: 0em;
+    margin-bottom: 3%;
 }
 
 .sub-title {
@@ -49,5 +53,5 @@
 
 .body span {
     display: block;
-    margin-bottom: 1em;
+    margin-bottom: 1%;
 }

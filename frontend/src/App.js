@@ -18,14 +18,10 @@ function App() {
     <div className="app-container">
       <Router>
         <Navbar dispatch={dispatch} state={state} />
-        
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<HomePage state={state} dispatch={dispatch} />} />
-            <Route path="/about" element={<AboutPage state={state} dispatch={dispatch} />} />
-          </Routes>
-        </div>
-        
+        <Routes>
+          <Route path="/" element={<HomePage state={state} dispatch={dispatch} />} />
+          <Route path="/about" element={<AboutPage state={state} dispatch={dispatch} />} />
+        </Routes>
         <Footer />
       </Router>
     </div>

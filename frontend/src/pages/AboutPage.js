@@ -11,7 +11,7 @@ const AboutPage = ({ state, dispatch }) => {
 
 
   return (
-     <div className="page-container" style={{ backgroundColor: '#F8F8F8' }}>
+     <div className="about-page-container">
       <AboutUsComponent/>
       <AboutUsBanner/>
       <Doctor1/>
