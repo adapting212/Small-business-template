@@ -39,7 +39,7 @@ const Navbar = ({ dispatch, state }) => {
         <NavLink to="/" className="nav-link" activeClassName="active">
           FAQ
         </NavLink>
-        <NavLink to="/" className="contact-us" activeClassName="active">
+        <NavLink to="/" className="nav-link" activeClassName="active">
           Contact Us
         </NavLink>
       </div>

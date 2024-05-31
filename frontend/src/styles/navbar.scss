@@ -49,34 +49,34 @@
   margin-left: 6%; /* Push to the right */
   margin-top: 2%;
   height: 9.3%; /* Converted to percentage */
-  background-color: #ffffff;
+  width: 35%;
+  background-color: transparent;
   transition: height 0.3s ease;
-  gap: 1%;
 }
 
 .nav-menu.expanded {
-  height: 80%;
+  height: 100%;
 }
 
 
 /* Link Styles */
-.nav-link, .contact-us {
+.nav-link {
   display: flex;
   align-items: center;
   color: #4e4b66;
   text-decoration: none;
-  padding: 5%;
   height: 100%;
   opacity: 0.8;
   cursor: pointer;
   flex: 1 1 auto; /* Allow links to adjust size for mobile */
 }
 
-.nav-link.active, .contact-us.active {
+
+.nav-link.active{
   color: #4e4b66;
 }
 
-.nav-link:hover, .contact-us:hover {
+.nav-link:hover{
   text-decoration: underline;
   color: #5a766a;
 }
@@ -99,7 +99,7 @@
     margin-left: 0; /* Remove left margin */
   }
 
-  .nav-link, .contact-us {
+  .nav-link{
     justify-content: center; /* Center links in mobile view */
     padding: 2% 0; /* Adjust padding for better spacing */
   }
