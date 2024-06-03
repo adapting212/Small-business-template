@@ -1,10 +1,11 @@
 /* Container Styling */
 .d1-container {
     position: flex; /* or relative/fixed depending on your layout needs */
-    margin-top: 0%; /* Converted 25em to 62.5% assuming 1em = 2.5% */
+    flex-direction: column;
+    margin-top: 10%; /* Converted 25em to 62.5% assuming 1em = 2.5% */
     margin-left: 10%;
-    width: 40%; /* Adjust as needed */
-    height: 45%;
+    width: 35%; /* Adjust as needed */
+    height: 100%;
     background-color: transparent;
 }
 
@@ -12,29 +13,40 @@
 .d1-text-container {
     display: flex; /* Use flexbox layout */
     flex-direction: column;
-    gap: 5%; /* Add space between the image and text, converted 20px to 5% */
-    margin-left: 43.75%; /* Converted 17.5em to 43.75% assuming 1em = 2.5% */
-    margin-top: -50%;
+    gap: 10%; /* Add space between the image and text, converted 20px to 5% */
+    width: 50%;
+    margin-left: 50%; /* Converted 17.5em to 43.75% assuming 1em = 2.5% */
+    margin-top: -70%;
 }
 
 /* Image Styling */
 .doctor-1 {
-    width: 40%; /* Converted 15em to 37.5% assuming 1em = 2.5% */
+    width: 50%; /* Converted 15em to 37.5% assuming 1em = 2.5% */
     height: auto; /* Maintain aspect ratio */
     flex-shrink: 0; /* Prevent image from shrinking */
     border-radius: 300px; /* Converted 100px to 250% assuming 1px = 2.5% of width */
+    margin-left: -10%;
+    border: 15px solid white; /* Add white border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+    transition: transform 0.3s ease-in-out;
 }
+
+.doctor-1.hover {
+    transform: scale(1.05);
+  }
 
 /* Title Styling */
 .d1-title {
     font-size: 24px; /* Converted 24px to 6% assuming 1px = 0.25% of 100px */
     font-weight: bold;
+    margin-bottom: 2.5%;
 }
 
 /* Subtitle Styling */
 .d1-subtitle {
     font-size: 12.8px; /* Converted 12.8px to 3.2% assuming 1px = 0.25% of 100px */
     font-weight: normal; /* Normal weight */
+    margin-bottom: 10%;
 }
 
 /* Body Text Styling */

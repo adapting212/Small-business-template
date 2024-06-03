@@ -7,14 +7,14 @@ const AboutUsBanner = () => {
   return (
     <div className="container">
 
-<div class="left">
+<div class="right">
   <div class="background-image pink-blob"></div>
   <div class="background-image abstract-flower"></div>
   <div class="aboutUsimg-container">
     <img src={right} alt="Description" class="aboutusimg" />
   </div>
 </div>
-      <div className="right">
+      <div className="left">
         <Typography variant="h4" gutterBottom className="header1">
           ABOUT US
         </Typography>

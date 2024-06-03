@@ -17,16 +17,35 @@
 /* Person Image Styles */
 .person {
     max-width: 43%;
+    z-index: 1;
     height: auto;
     object-fit: cover;
     border-radius: 300px; /* Optional: rounded corners */
     flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
+.effect1{
+    z-index: 0;
+    height: 10%;
+    width: 50%;
+    margin-left: -60%;
+    margin-top: -20%;
+}
+
+.effect2 {
+    position: relative; /* Ensure z-index works */
+    z-index: 0;
+    height: 20%; /* This sets the height to 20% of the parent element */
+    width: auto; /* This maintains the aspect ratio */
+    margin-top: 40%;
+    margin-left: -5%;
+    transform: rotate(130deg); /* Correct property to rotate the element */
+}
+
 /* Text Container Styles */
 .text-container {
     flex: 1; /* Allow text container to grow */
-    margin-left: 10%;
+    margin-left: 0%;
     margin-top: -5%;
 }
 
@@ -54,4 +73,5 @@
 .body span {
     display: block;
     margin-bottom: 1%;
+    width: 90%;
 }

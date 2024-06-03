@@ -1,5 +1,7 @@
 import React from 'react';
 import person1 from '../assets/person1.jpg';
+import effect1 from '../assets/effect1.svg';
+import effect2 from '../assets/effect2.svg';
 import '../styles/AboutUsBanner.scss';
 
 const AboutUsComponent = () => {
@@ -7,6 +9,8 @@ const AboutUsComponent = () => {
     <div className="about-us-container">
 
         <img src={person1} className="person" aria-hidden="true" />
+        <img src={effect1} className="effect1" aria-hidden="true" />
+        <img src={effect2} className="effect2" aria-hidden="true" />
         <div className='text-container'>
           <div className='about-title'>
             <span>ABOUT US</span>

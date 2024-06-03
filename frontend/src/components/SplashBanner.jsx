@@ -20,9 +20,9 @@ const SplashBanner = () => {
           Book Appointment
         </Button>
       </div>
-      <div className="right">
-        <img src={right} alt="Description" />
-      </div>
+
+        <img className="right"  src={right} alt="Description" />
+
     </div>
   );
 };
