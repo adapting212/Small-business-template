@@ -1,0 +1,74 @@
+/* Container Styles */
+.about-hp-container {
+    display: flex;
+    background: transparent;
+    margin: 10% 0 10% 10%;
+    height: auto;
+    width: 75%;
+    margin-bottom: 10%;
+}
+
+/* Person Image Styles */
+.personhp {
+    max-width: 43%;
+    z-index: 1;
+    height: auto;
+    object-fit: cover;
+    border-radius: 300px; /* Optional: rounded corners */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+/* Effect Image Styles */
+.effect1hp {
+    z-index: 0;
+    height: 10%;
+    width: 50%;
+    margin: -20% 0 0 -60%;
+}
+
+.effect2hp {
+    position: relative; /* Ensure z-index works */
+    z-index: 0;
+    height: 20%; /* This sets the height to 20% of the parent element */
+    width: auto; /* This maintains the aspect ratio */
+    margin: 40% 0 0 -5%;
+    transform: rotate(130deg); /* Correct property to rotate the element */
+}
+
+.effect3hp {
+    margin-left: 17%;
+    height: 30%;
+    width: 30%;
+}
+
+/* Text Container Styles */
+.hp-text-container {
+    flex: 1; /* Allow text container to grow */
+    margin: -5% 0 0 0;
+}
+
+/* Text Modifications */
+.hp-about-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5A766A;
+    margin-bottom: 3%;
+}
+
+.hp-sub-title {
+    font-size: 49px;
+    font-weight: bold;
+    line-height: 58.8px;
+    color: black;
+    margin-bottom: 0.5em;
+}
+
+.hp-body {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hp-body span {
+    display: block;
+    margin-bottom: 1%;
+}

@@ -1,62 +1,69 @@
 .bannersquarecontainer {
   display: flex;
-  height: 30vh;
+  height: 20rem; /* Adjust to viewport height */
   flex-direction: row;
-  width: 100%
+  width: 100%;
 }
 
-.leftbannersquare {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 25%;
-  background-color: rgb(238,240,239);
-  
+.leftbannersquare, .centerbannersquare2 {
+  background-color: rgb(238, 240, 239);
+  width: 25%; /* Ensure all squares take up 25% width */
   align-items: center; /* Center items horizontally */
-  text-align: center;
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text */
 }
 
-.rightbannersquare {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 25%;
-  background-color: rgb(72,94,86);
+.rightbannersquare,.centerbannersquare {
+  background-color: #5A766A;
+  width: 25%; /* Ensure all squares take up 25% width */
   align-items: center; /* Center items horizontally */
-  text-align: center;
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text */
 }
 
-.centerbannersquare {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 25%;
-  background-color: rgb(72,94,86);
-  align-items: center; /* Center items horizontally */
-  text-align: center;
-}
-
-.centerbannersquare2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 25%;
-  background-color: rgb(238,240,239);
-  align-items: center; /* Center items horizontally */
-  text-align: center;
-}
-
-.leftbannersquare:hover,
-.rightbannersquare:hover,
-.centerbannersquare:hover,
-.centerbannersquare2:hover {
+.bannersquare:hover {
   filter: brightness(70%); /* Apply a darkening effect on hover */
+  transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.circle-image-container {
+  background-color: white;
+  border-radius: 100%; /* Make the image circular */
+  height: 30%;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 20%;
 }
 
 .circle-image {
-  border-radius: 50%; /* Make the image circular */
-  width:11vh; /* Adjust width as needed */
-  height:11vh; /* Adjust height as needed */
+  width: 55%; /* Adjust width as needed */
+  height: auto;
   object-fit: cover; /* Ensure the image covers the entire circle */
-   /* Add some spacing below the image */
+  margin-top: 15%;
+}
+
+.banner-title1 {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.banner-subtitle1 {
+  font-size: 16px;
+  color: black;
+  margin-top: 0.5rem;
+}
+
+.banner-title2 {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.banner-subtitle2 {
+  font-size: 16px;
+  color: white;
+  margin-top: 0.5rem;
 }
