@@ -1,0 +1,71 @@
+.wpcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 20rem; /* Adjust to viewport height */
+  width: 100%;
+  background-color: #5D796C;
+}
+
+.wptopcontainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: #5D796C;
+}
+
+.wpleftsquare, .wpcentersquare, .wprightsquare {
+  width: 33%; /* Ensure all squares take up 25% width */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text */
+}
+
+.wpcircle-image-container {
+  background-color: white;
+  border-radius: 100%; /* Make the image circular */
+  height: 30%;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 20%;
+}
+
+.wpcircle-image {
+  width: 55%; /* Adjust width as needed */
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the entire circle */
+  margin-top: 15%;
+}
+
+.wpbanner-title1 {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.wpbanner-subtitle1 {
+  font-size: 16px;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.wptitle {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.wpheader {
+  font-size: 49px;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.wpbody{
+  font-size: 16px;
+  color: white;
+  margin-top: 0.5rem;
+}
